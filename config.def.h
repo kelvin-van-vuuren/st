@@ -5,8 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static char *font2[] = { "LiterationMono Nerd Font:style=Book:pixelsize=12:antialias=true:autohint=true" };
+static char *font = "JetBrainsMono Nerd Font :pixelsize=12:antialias=true:autohint=true";
+static char *font2[] = { "JetBrainsMono Nerd Font :pixelsize=12:antialias=true:autohint=true" };
+//static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+//static char *font2[] = { "LiterationMono Nerd Font:style=Book:pixelsize=12:antialias=true:autohint=true" };
 static int borderpx = 10;
 
 /*
@@ -95,7 +97,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.98;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -180,36 +182,36 @@ static uint forcemousemod = ShiftMask;
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-		{ "font",         STRING,  &font },
-		{ "color0",       STRING,  &colorname[0] },
-		{ "color1",       STRING,  &colorname[1] },
-		{ "color2",       STRING,  &colorname[2] },
-		{ "color3",       STRING,  &colorname[3] },
-		{ "color4",       STRING,  &colorname[4] },
-		{ "color5",       STRING,  &colorname[5] },
-		{ "color6",       STRING,  &colorname[6] },
-		{ "color7",       STRING,  &colorname[7] },
-		{ "color8",       STRING,  &colorname[8] },
-		{ "color9",       STRING,  &colorname[9] },
-		{ "color10",      STRING,  &colorname[10] },
-		{ "color11",      STRING,  &colorname[11] },
-		{ "color12",      STRING,  &colorname[12] },
-		{ "color13",      STRING,  &colorname[13] },
-		{ "color14",      STRING,  &colorname[14] },
-		{ "color15",      STRING,  &colorname[15] },
-		{ "background",   STRING,  &colorname[256] },
-		{ "foreground",   STRING,  &colorname[257] },
-		{ "cursorColor",  STRING,  &colorname[258] },
-		{ "termname",     STRING,  &termname },
-		{ "shell",        STRING,  &shell },
-		{ "minlatency",   INTEGER, &minlatency },
-		{ "maxlatency",   INTEGER, &maxlatency },
-		{ "blinktimeout", INTEGER, &blinktimeout },
-		{ "bellvolume",   INTEGER, &bellvolume },
-		{ "tabspaces",    INTEGER, &tabspaces },
-		{ "borderpx",     INTEGER, &borderpx },
-		{ "cwscale",      FLOAT,   &cwscale },
-		{ "chscale",      FLOAT,   &chscale },
+  { "font",         STRING,  &font },
+  { "fontalt0",     STRING,  &font2[0] },
+  { "color0",       STRING,  &colorname[0] },
+  { "color1",       STRING,  &colorname[1] },
+  { "color2",       STRING,  &colorname[2] },
+  { "color3",       STRING,  &colorname[3] },
+  { "color4",       STRING,  &colorname[4] },
+  { "color5",       STRING,  &colorname[5] },
+  { "color6",       STRING,  &colorname[6] },
+  { "color7",       STRING,  &colorname[7] },
+  { "color8",       STRING,  &colorname[8] },
+  { "color9",       STRING,  &colorname[9] },
+  { "color10",      STRING,  &colorname[10] },
+  { "color11",      STRING,  &colorname[11] },
+  { "color12",      STRING,  &colorname[12] },
+  { "color13",      STRING,  &colorname[13] },
+  { "color14",      STRING,  &colorname[14] },
+  { "color15",      STRING,  &colorname[15] },
+  { "background",   STRING,  &colorname[258] },
+  { "foreground",   STRING,  &colorname[259] },
+  { "cursorColor",  STRING,  &colorname[256] },
+  { "termname",     STRING,  &termname },
+  { "shell",        STRING,  &shell },
+  { "blinktimeout", INTEGER, &blinktimeout },
+  { "bellvolume",   INTEGER, &bellvolume },
+  { "tabspaces",    INTEGER, &tabspaces },
+  { "borderpx",     INTEGER, &borderpx },
+  { "cwscale",      FLOAT,   &cwscale },
+  { "chscale",      FLOAT,   &chscale },
+  { "alpha",        FLOAT,   &alpha },
 };
 
 /*
