@@ -5,16 +5,18 @@ Recompile with `rm -rf config.h && sudo make clean install`
 ## Keybindings<br>
 
 <pre>
-ctrl + shift + c        Copy  <br>
-ctrl + shift + v        Paste <br>
-alt  + comma            Zoom in <br>
-alt  + .                Zoom out <br>
-alt  + g                Reset Zoom<br>
-alt  + s                Increase Transparency<br>
-alt  + a                Decrease Transparency <br>
-copy anything and right click on the terminal ( will paste the copied thing ) 
-mod + shift + enter    open a new terminal with same cwd ( current working directory )
+ctrl + shift + c        Copy
+ctrl + shift + v        Paste
+Right click             Paste <br>
 
+alt  + comma            Zoom in 
+alt  + .                Zoom out <br>
+
+alt  + g                Reset Zoom
+alt  + s                Increase Transparency
+alt  + a                Decrease Transparency <br>
+
+mod + shift + enter    open a new terminal with same cwd ( current working directory )
 
 alt + k                 scroll down 
 alt + j                 scroll up
