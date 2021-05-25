@@ -7,14 +7,14 @@ Recompile with `rm -rf config.h && sudo make clean install`
 <pre>
 ctrl + shift + c        Copy
 ctrl + shift + v        Paste
-Right click             Paste <br>
+Right click             Paste
 
 alt  + comma            Zoom in 
-alt  + .                Zoom out <br>
-
+alt  + .                Zoom out
 alt  + g                Reset Zoom
+
 alt  + s                Increase Transparency
-alt  + a                Decrease Transparency <br>
+alt  + a                Decrease Transparency
 
 mod + shift + enter    open a new terminal with same cwd ( current working directory )
 
