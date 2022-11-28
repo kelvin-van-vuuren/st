@@ -74,6 +74,7 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
+char *defaulttermname = "st-256color";
 char *termname = "terminal";
 
 /*
